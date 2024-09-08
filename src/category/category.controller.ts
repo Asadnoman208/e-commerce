@@ -19,6 +19,9 @@ export class CategoryController {
         return this.categoryService.getAll();
     }
 
+
+
+
     @Patch(':id')
     async edit(@Param('id') id: string, @Body() updateDto: addCategory): Promise<ApiResponse<Categories>> {
         return this.categoryService.edit(id, updateDto);
