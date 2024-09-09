@@ -6,6 +6,9 @@ import { HttpExceptionFilter } from './common/strategies/http-exception.filter';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  // Enable CORS with default settings
+  app.enableCors();
+
   // Set up global validation
   app.useGlobalPipes(new ValidationPipe({
     whitelist: true,
