@@ -1,7 +1,7 @@
 import { CategoryService } from './category.service';
-import { ApiResponse } from 'src/common/utils/response.util';
-import { addCategory } from 'src/common/dtos/add-category.dto';
-import { Categories } from 'src/common/entities/category.entity';
+import { ApiResponse } from './../common/utils/response.util';
+import { addCategory } from './../common/dtos/add-category.dto';
+import { Categories } from './../common/entities/category.entity';
 export declare class CategoryController {
     private readonly categoryService;
     constructor(categoryService: CategoryService);

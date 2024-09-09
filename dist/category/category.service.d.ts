@@ -1,6 +1,6 @@
 import { addCategory } from './../common/dtos//add-category.dto';
 import { ApiResponse } from './../common/utils/response.util';
-import { Categories } from 'src/common/entities/category.entity';
+import { Categories } from './../common/entities/category.entity';
 import { Model } from 'mongoose';
 export declare class CategoryService {
     private categoriesModel;

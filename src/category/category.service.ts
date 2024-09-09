@@ -2,7 +2,7 @@ import { HttpStatus, Injectable } from '@nestjs/common';
 import { addCategory } from './../common/dtos//add-category.dto';
 import { ApiResponse, createResponse } from './../common/utils/response.util';
 import { MESSAGES } from './../common/utils/responseMessages';
-import { Categories } from 'src/common/entities/category.entity';
+import { Categories } from './../common/entities/category.entity';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 

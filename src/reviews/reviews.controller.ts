@@ -2,7 +2,7 @@ import { Controller, Post, Body, Get, Param } from '@nestjs/common';
 import { ReviewsService } from './reviews.service';
 import { AddReviewDto } from './../common/dtos/add-review.dto';
 import { Reviews } from './../common/entities/reviews.entity';
-import { ApiResponse } from 'src/common/utils/response.util';
+import { ApiResponse } from './../common/utils/response.util';
 
 @Controller('reviews')
 export class ReviewsController {
